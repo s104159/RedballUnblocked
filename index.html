@@ -30,21 +30,15 @@ function redirect(link) {
          }
       button:hover {
       background-color: #191919;
-      height: 100%;
-      width: 100%;
-      webkit-filter: blur(8px);
-    -moz-transition: all .5s;
-    -webkit-transition: all .5s;
-    transition: all .5s;
-      }
-      img:hover {
-      height: 100%;
-      width: 100%;
-      webkit-filter: blur(8px);
+      height: 40px;
+      width: 640px;
       filter: blur(8px);
-      -moz-transition: all .5s;
-      -webkit-transition: all .5s; 
-      transition: all .5s;
+      transition: all .4s;
+      }
+      button:not(:hover) {
+      height: 40px;
+      width: 320px;
+      transition: all 1s;
       }
       button {
         color: white;
@@ -53,11 +47,6 @@ function redirect(link) {
         font-size: 32px;
         width: 320px;
         height: 40px;
-      }
-      button:not(:hover) {
-      height: 40px;
-      width: 320px;
-      transition: all.5s;
       }
       .parallax {
      background-image: url("images/LmaoTStatic.png");
@@ -83,7 +72,7 @@ function redirect(link) {
     <div class="parallax"></div>
     <div class="button">
       <center>
-      <button id=bpie onclick="window.location.href = 'https://s107807.github.io';">Keylime's site</a> </button></center>
+      <button id=bpie onclick="window.location.href = 'https://s107807.github.io';">Keylime's site </button></center>
       <center>
       <button id=bgoog style="background-image: url('images/Googlefront.png') no-repeat" onclick="window.location.href = 'https://google.com';">Google</button></center>
       <center>
