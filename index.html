@@ -7,6 +7,38 @@ function redirect(link) {
   window.open(link)
 }
     </script>
+	<style>
+	.hide {
+	display: none;
+	}
+	.bpie:hover + .hide{
+	display: block;
+	color: white;
+	position: absolute; 
+	left: 10%; 
+	top:700px;
+	}
+	.bgoog:hover + .hide{
+	
+	}
+	.bword:hover + .hide{
+	
+	}
+	.bschool:hover + .hide{
+	
+	}
+	.bmcalc:hover + .hide{
+	
+	}
+	.bspong:hover + .hide{
+	
+	}
+	.blmao:hover + .hide{
+	
+	}
+	.bgdrive:hover + .hide{
+	
+	}
     <style>
       ul {
          background-color: #191919;
@@ -30,14 +62,16 @@ function redirect(link) {
          }
       button:hover {
       background-color: #191919;
-      height: 40px;
-      width: 640px;
-      filter: blur(4px);
+      height: 160px;
+      width: 320px;
+      filter: blur(2px);
+	  z-index: 2;
       transition: all .4s;
       }
       button:not(:hover) {
-      height: 40px;
+      height: 160px;
       width: 320px;
+	  z-index: 1;
       transition: all 1s;
       }
       button {
@@ -46,9 +80,10 @@ function redirect(link) {
         border: none;
         font-size: 32px;
         width: 320px;
-        height: 40px;
-        font-family: Comic Sans MS;
+        height: 160px;
+        font-family: sans-serif;
         font-size: 2.02em;
+		margin: 2px;
       }
       .parallax {
         background: linear-gradient(5deg, #202020 40%, #000000 95%);
@@ -74,23 +109,41 @@ function redirect(link) {
     </ul>
     <div class="parallax"></div>
     <div class="button">
+	<div class="bpie">
       <center>
-      <button id=bpie style="margin-up:5px; background-image: url('images/Keylimenuts.png') no-repeat" onclick="window.location.href = 'https://s107807.github.io';"></button></center>
+      <button id=bpie  style="position: absolute; left: 10%; top:700px; background-image: url('images/Keylimenutsa.png') no-repeat" onclick="window.location.href = 'https://s107807.github.io';">keylime's site
+	  </button>
+	  </center>
+	  </div>
       <center>
-      <button id=bgoog style="background-image: url('images/Googlefront.png') no-repeat" onclick="window.location.href = 'https://google.com';"></button></center>
+      <button id=bword class="bword" style="position: absolute; left: 50%; top:700px; background-image: url('images/Wordlethumbnaila.png')" onclick="window.location.href = 'https://www.nytimes.com/games/wordle/index.html';">worlde
+	  </button>
+	  </center>
       <center>
-      <button id=bword style="background-image: url('images/Wordlethumbnail.png')" onclick="window.location.href = 'https://www.nytimes.com/games/wordle/index.html';"></button></center>
+      <button id=bschool class="bschool" style="position: absolute; left: 70%; top:700px; background-image: url('images/Schoologythumbnaila.png')" onclick="window.location.href = 'https://laketravis.schoology.com';">schoology
+	  </button>
+	  </center>
       <center>
-      <button id=bschool style="background-image: url('images/Schoologythumbnail.png')" onclick="window.location.href = 'https://laketravis.schoology.com';"></button></center>
+      <button id=bmcalc class="bmcalc" style="position: absolute; left: 10%; top:900px; background-image: url('images/Calculatorthumbnaila.png')" onclick="window.location.href = 'https://www.mathway.com/Algebra';">mathway
+	  </button>
+	  </center>
       <center>
-      <button id=bmcalc style="background-image: url('images/Calculatorthumbnail.png')" onclick="window.location.href = 'https://www.mathway.com/Algebra';"></button></center>
+      <button id=bspong class="bspong" style="position: absolute; left:30%; top:900px; background-image: url('images/Spotifythumbnaila.png')" onclick="window.location.href = 'https://open.spotify.com';">spotify
+	  </button>
+	  </center>
       <center>
-      <button id=bspong style="background-image: url('images/Spotifythumbnail.png')" onclick="window.location.href = 'https://open.spotify.com';"></button></center>
+      <button id=blmao class="blmao"style="position: absolute; left: 50%; top:900px; background-image: url('images/Restrictedthumbnaila.png')" onclick="window.location.href = 'https://blocked.goguardian.com';">goguardianblocked
+	  </button>
+	  </center>
       <center>
-      <button id=blmao style="background-image: url('images/Restrictedthumbnail.png')" onclick="window.location.href = 'https://blocked.goguardian.com';"></button></center>
-      <center>
-      <button id=bgdrive style="background-image: url('images/Drivethumbnail.png')" onclick="window.location.href = 'https://drive.google.com';"></button></center>
-    </button>
+      <button id=bgdrive class="bgdrive" style="position: absolute; left: 30%; top:700px; background-image: url('images/Drivethumbnaila.png')" onclick="window.location.href = 'https://drive.google.com';">google drive
+	  </button>
+	  </center>
+	  <center>
+      <button id=bgoog class="bgoog" style="position: absolute; left: 70%; top:900px; background-image: url('images/Googlefronta.png') no-repeat" onclick="window.location.href = 'https://google.com';">google
+	  </button>
+	  </center>
+	  </div>
     </body>
  </head>
 </html>
