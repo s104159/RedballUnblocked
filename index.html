@@ -3,11 +3,16 @@
   <head>
   <body>
     <script>
-function redirect(link) {
-  window.open(link)
+function toggle() {
+  var element = document.body;
+  element.classList.toggle("dm");
 }
     </script>
     <style>
+      .dm {
+	 background-color: #D3D3D3;
+	 color: black;
+	    }
       ul {
          background-color: #191919;
          overflow: hidden;
@@ -79,20 +84,27 @@ function redirect(link) {
     </ul>
     <div class="parallax"></div>
     <div class="button">
+	    <div class=DMbutton>
+	<button onclick="toggle()">Theme </button>
 	<div class="bpie">
       <center>
       <button id=bpie  style="position: absolute; left: 10%; top:700px; background-image: url('images/Keylimenutsa.png') no-repeat" onclick="window.location.href = 'https://s107807.github.io';">keylime's site
 	  </button>
 	  </center>
 	  </div>
+	    <div class="bword">
       <center>
       <button id=bword class="bword" style="position: absolute; left: 50%; top:700px; background-image: url('images/Wordlethumbnaila.png')" onclick="window.location.href = 'https://www.nytimes.com/games/wordle/index.html';">worlde
 	  </button>
 	  </center>
+	    </div>
+	    <div class="bschool">
       <center>
       <button id=bschool class="bschool" style="position: absolute; left: 70%; top:700px; background-image: url('images/Schoologythumbnaila.png')" onclick="window.location.href = 'https://laketravis.schoology.com';">schoology
 	  </button>
 	  </center>
+	    </div>
+	    <div class="bmcalc">
       <center>
       <button id=bmcalc class="bmcalc" style="position: absolute; left: 10%; top:900px; background-image: url('images/Calculatorthumbnaila.png')" onclick="window.location.href = 'https://www.mathway.com/Algebra';">mathway
 	  </button>
@@ -102,7 +114,7 @@ function redirect(link) {
 	  </button>
 	  </center>
       <center>
-      <button id=blmao class="blmao"style="position: absolute; left: 50%; top:900px; background-image: url('images/Restrictedthumbnaila.png')" onclick="window.location.href = 'https://blocked.goguardian.com';">goguardianblocked
+      <button id=blmao class="blmao"style="position: absolute; left: 50%; top:900px; background-image: url('images/Restrictedthumbnaila.png')" onclick="window.location.href = 'https://blocked.goguardian.com';">blocked
 	  </button>
 	  </center>
       <center>
