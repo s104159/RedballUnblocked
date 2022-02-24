@@ -6,9 +6,13 @@
 function toggle() {
   var element = document.body;
   element.classList.toggle("dm");
+  element.classList.toggle(".button");
 }
     </script>
     <style>
+      .button {
+	      background-color: #7e7e7e;
+	      color:black;
       .dm {
 	 background-color: #D3D3D3;
 	 color: black;
@@ -85,7 +89,7 @@ function toggle() {
     <div class="parallax"></div>
     <div class="button">
 	    <div class=DMbutton>
-	<button onclick="toggle()">Theme </button>
+	<button style=onclick="toggle()">Theme </button>
 	<div class="bpie">
       <center>
       <button id=bpie  style="position: absolute; left: 10%; top:700px; background-image: url('images/Keylimenutsa.png') no-repeat" onclick="window.location.href = 'https://s107807.github.io';">keylime's site
